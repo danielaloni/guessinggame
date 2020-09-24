@@ -9,8 +9,8 @@
 # This is piped into egrep -v / which outputs only files (not directories). 
 # This is piped into wc -l which counts the number of files.
 
-
-number_of_files=$(ls -p | egrep -v / | wc -l)
+function guessinggame {
+local number_of_files=$(ls -p | egrep -v / | wc -l)
 
 echo "Please guess the number of files in this directory:"
 read usr_input
@@ -34,3 +34,6 @@ echo "                @~/ ,. \~@        	"
 echo "               /_( \__/ )_\       	"
 echo "                  \__U_/     		"
 echo
+}
+
+guessinggame
