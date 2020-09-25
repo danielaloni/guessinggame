@@ -16,7 +16,7 @@ while [[ ! $usr_input =~ $positive_integer ]] || [[ $usr_input -ne $number_of_fi
 do
 	if [[ ! $usr_input =~ $positive_integer  ]]
 		then
-		echo "This is not a positive integer. It does not make sense.  Pplease try again"
+		echo "This is not a positive integer. It does not make sense.  Please try again"
 		read usr_input
 	elif [[ $usr_input -gt $number_of_files ]]
 		then
